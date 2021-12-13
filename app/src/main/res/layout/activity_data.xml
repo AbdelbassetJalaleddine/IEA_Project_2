@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".Activities.DataActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/pick_project_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Project 1"
+            />
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        >
+        <EditText
+            android:id="@+id/rows_EditText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:digits="0123456789"
+            android:textColor="@color/white"
+            android:backgroundTint="#39486E"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="5dp"
+            android:hint="Number of Rows"
+            android:textColorHint="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/ic_rectangle"
+            android:fontFamily="@font/poppins_regular"
+            />
+    </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            >
+            <EditText
+                android:id="@+id/cols_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:textColor="@color/white"
+
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Columns"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_1_x_pos"
+
+            >
+            <EditText
+                android:id="@+id/x_pos_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:hint="X Position of Vaccum"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_1_y_pos"
+            >
+            <EditText
+                android:id="@+id/y_pos_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/white"
+
+                android:hint="Y Position of Vaccum"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_1_nb_dirt"
+
+            >
+            <EditText
+                android:id="@+id/dirt_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Dirt"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            >
+            <EditText
+                android:id="@+id/walls_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Walls"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_2_cleaners"
+            android:visibility="gone"
+            >
+            <EditText
+                android:id="@+id/cleaners_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Cleaners"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_2_dirtProd"
+            android:visibility="gone"
+            >
+            <EditText
+                android:id="@+id/dirt_producers_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Dirt Producers"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_2_max_depth"
+            android:visibility="gone"
+            >
+            <EditText
+                android:id="@+id/max_depth_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Max depth for minimax"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            android:id="@+id/phase_2_rounds"
+            android:visibility="gone"
+            >
+            <EditText
+                android:id="@+id/rounds_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:digits="0123456789"
+                android:backgroundTint="#39486E"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:hint="Number of Rounds"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_rectangle"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/phase_1_observable_radio"
+            >
+
+            <RadioButton
+                android:id="@+id/fully_observable_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="Fully Observable"
+                />
+            <RadioButton
+                android:id="@+id/partially_observable_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="Partially Observable"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/phase_1_bfs_radio"
+
+            >
+
+            <RadioButton
+                android:id="@+id/bfs_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="BFS"
+                />
+            <RadioButton
+                android:id="@+id/dfs_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="DFS"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/phase_2_mini_radio"
+            android:visibility="gone"
+            >
+
+            <RadioButton
+                android:id="@+id/minimax_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="Minimax"
+                />
+            <RadioButton
+                android:id="@+id/algo1_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:text="Algorithm 1"
+                />
+
+        </TableRow>
+        <TextView
+            android:id="@+id/clean_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_rectangle_green"
+            android:text="Clean"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
